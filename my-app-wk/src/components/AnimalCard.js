@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function AnimalCard() {
+function AnimalCard({name, averAge, classification, origin, img}) {
+    console.log('using AC')
+    //(name, classificatio, origin, averAge, img)
   return (
-    <div>AnimalCard</div>
+    <div className='animalcard'>
+        <h2>{name}</h2>
+        <p>{classification}</p>
+        <p>{origin}</p>
+        <p>{averAge}</p>
+        <img className='animalimg' src={img} alt="" />
+        </div>
   )
 }
 

@@ -6,7 +6,7 @@ import News from './components/News';
 import OpenField from './components/OpenField';
 
 function App() {
-  let Shownews = true;
+  let Shownews = false;
   return (
     <div className="App">
       <Header/>
